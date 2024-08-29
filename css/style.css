@@ -603,3 +603,72 @@ line-height: 25px;
     width: 70% !important;
 }
 
+.call-us {
+    padding: 12px 26px;
+    background-color: var(--secondary);
+    color: var(--light);
+    font-weight: 800;
+    border-radius: 10rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width:992px){
+    .carousel-item img{
+    height: 80vh;
+    object-fit: cover;
+}
+}
+@media(max-width:768px){
+    .carousel-item img{
+        position: unset !important;
+    height: 80vh !important;
+    object-fit: cover;
+}
+}
+.who p{
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.why{
+    background:linear-gradient(to right,#374656,#4f5a69) ;
+}
+.why h4,.why h1,.why p,.why h3{
+color: var(--light);
+}
+
+.contact-us{
+    background:linear-gradient(to right,#374656,#4f5a69) ;
+}
+.contact-us h1{
+    color: var(--light);
+}
+
+
+.footer,.copyright{
+    background:linear-gradient(to right,#374656,#4f5a69) ;
+}
+.footer{
+    border-top: 1px solid var(--secondary);
+}
+.copyright{
+    border-top: 2px solid var(--secondary);
+}
+
+.whatsapp{
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 999;
+    }
+    .whatsapp i{
+        padding: 0.5rem;
+        background-color: var(--secondary);
+        color: var(--light);
+        font-size: 2.6rem;
+        border-radius: 50%;
+    }
+    .whatsapp:hover i{
+        background-color: var(--primary);
+        color: var(--secondary);
+    }
