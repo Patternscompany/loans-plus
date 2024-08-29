@@ -2204,6 +2204,7 @@ textarea.form-control-lg {
 }
 .form-floating {
   position: relative;
+  margin-bottom: 1.5rem;
 }
 .form-floating > .form-control,
 .form-floating > .form-select {
@@ -2554,15 +2555,15 @@ fieldset:disabled .btn {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #2d50d6;
-  border-color: #2a4bca;
+  /* background-color: #2d50d6;
+  border-color: #2a4bca; */
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
   color: #fff;
-  background-color: #2d50d6;
+  /* background-color: #2d50d6;
   border-color: #2a4bca;
-  box-shadow: 0 0 0 0.25rem rgba(83, 118, 252, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(83, 118, 252, 0.5); */
 }
 .btn-check:checked + .btn-primary,
 .btn-check:active + .btn-primary,
@@ -2570,15 +2571,15 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #2a4bca;
-  border-color: #2847bd;
+  /* background-color: #2a4bca;
+  border-color: #2847bd; */
 }
 .btn-check:checked + .btn-primary:focus,
 .btn-check:active + .btn-primary:focus,
 .btn-primary:active:focus,
 .btn-primary.active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(83, 118, 252, 0.5);
+  box-shadow: 0 0 0 0.25rem var(--primary);
 }
 .btn-primary:disabled,
 .btn-primary.disabled {
@@ -3717,6 +3718,15 @@ fieldset:disabled .btn {
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
     transition: none;
+  }
+}
+@media(max-width:992px){
+  .navbar-toggler{
+    background-color: var(--secondary);
+  
+  }
+  .navbar-toggler span{
+   
   }
 }
 .navbar-toggler:hover {

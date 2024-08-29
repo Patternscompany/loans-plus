@@ -28,7 +28,7 @@
             if ($(this).scrollTop() > 45) {
                 $('.fixed-top').addClass('bg-white shadow').css('top', -45);
             } else {
-                $('.fixed-top').removeClass('bg-white shadow').css('top', 0);
+                $('.fixed-top').removeClass('bg-white shadow ').css('top', 0);
             }
         }
     });
@@ -106,6 +106,30 @@
             },
             992:{
                 items:3
+            }
+        }
+    });
+    // Testimonials carousel
+    $(".testimonial-carousel1").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        center: true,
+        margin: 24,
+        dots: true,
+        loop: true,
+        nav : false,
+        responsive: {
+            0:{
+                items:1
+            },
+			576:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            992:{
+                items:5
             }
         }
     });
