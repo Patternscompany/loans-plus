@@ -602,3 +602,9 @@ line-height: 25px;
 .partner-bank-icons{
     width: 70% !important;
 }
+
+@media(max-width: 992px){
+    .mobile-view{
+        background-image: ;
+    }
+}
